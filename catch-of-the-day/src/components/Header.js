@@ -2,6 +2,7 @@ import React from 'react'
 
 
 const Header = (props) => {
+     const { tagline } = props
      return (
      <header className='top'>
                     <h1>Catch 
@@ -11,7 +12,7 @@ const Header = (props) => {
                               </span>
                                Day</h1>
                     <h3 className='tagline'>
-                    <span>{ props.tagline }</span>
+                    <span>{tagline}</span>
                     </h3>
                </header>
      )
